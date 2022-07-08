@@ -2,7 +2,7 @@
     <h1>Listagem de Usuários</h1>
     <hr>
 
-    <a href="<?= base_url() . "?c=usuario&m=add" ?>" class="btn btn-success">Inserir Usuário</a>
+    <a href="http://dbcatalogo3e2guilherme.42web.io/index.php?c=usuario&m=add" class="btn btn-success">Inserir Usuário</a>
     <table class="table table-hover table-responsive">
         <thead>
             <tr>
@@ -15,10 +15,10 @@
                 <tr>
                     <td><?= $usuario['login'] ?></td>
                     <td>
-                        <a href="<?= base_url() ?>?c=usuario&m=excluir&id=<?= $usuario['idUsuario'] ?>" class="btn btn-danger" title="excluir">
+                        <a href="<?= "http://dbcatalogo3e2guilherme.42web.io/index.php?c=usuario&m=excluir&id=" . $usuario['idUsuario'] ?>" class="btn btn-danger" title="excluir">
                             <i class="fa-solid fa-trash-can"></i>
                         </a>
-                        <a href="<?= base_url() ?>?c=usuario&m=editar&id=<?= $usuario['idUsuario'] ?>" class="btn btn-primary" title="editar">
+                        <a href="<?= "http://dbcatalogo3e2guilherme.42web.io/index.php?c=usuario&m=editar&id=" . $usuario['idUsuario'] ?>" class="btn btn-primary" title="editar">
                             <i class="fa-solid fa-pen"></i>
                         </a>
                     </td>

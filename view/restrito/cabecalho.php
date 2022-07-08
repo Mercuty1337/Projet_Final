@@ -17,7 +17,7 @@
   <!-- Cabeçalho -->
   <header style="background-color: black;">
     <div class="container text-white pt-3 pb-3">
-      <a href="<?= base_url() . "?c=home" ?>" class="text-decoration-none text-white">
+      <a href="http://dbcatalogo3e2guilherme.42web.io/index.php?c=home" class="text-decoration-none text-white">
         <h1>Catálogo do IF</h1>
       </a>
       <p>Aqui você encontra de Tudo!</p>

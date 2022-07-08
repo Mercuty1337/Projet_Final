@@ -24,7 +24,7 @@
         <legend>Restrito</legend>
         <hr>
         <p>
-        <form action="<?= base_url() . "?c=restrito&m=entrar" ?>" method="post">
+        <form action="http://dbcatalogo3e2guilherme.42web.io/index.php?c=restrito&m=entrar" method="post">
             <div class="mb-3">
                 <label for="login" class="form-label" id="l">Login</label>
                 <input type="email" class="form-control" name="login" id="login">

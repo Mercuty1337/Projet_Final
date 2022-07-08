@@ -2,7 +2,7 @@
     <h1>Cadastro de usuario</h1>
     <hr>
 
-    <form method="POST" action="<?= base_url() . "?c=usuario&m=salvar" ?>">
+    <form method="POST" action="http://dbcatalogo3e2guilherme.42web.io/index.php?c=usuario&m=salvar">
         <div class="mb-3">
             <label for="login" class="form-label">Login</label>
             <input type="email" class="form-control" id="login" name="login" value="<?= $usuario['login'] ?? "" ?>" <?= isset($usuario) ? "readonly" : "" ?>>
@@ -13,7 +13,7 @@
             <input type="password" class="form-control" id="senha" name="senha">
         </div>
 
-        <input type="hidden" name="idusuario" value="<?= $usuario['idUsuario'] ?? ""?>">
+        <input type="hidden" name="idusuario" value="<?= $usuario['idUsuario'] ?? "" ?>">
 
         <button type="submit" class="btn btn-primary">Salvar</button>
     </form>

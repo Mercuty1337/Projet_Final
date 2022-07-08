@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="<?= base_url() . "?c=home" ?>">Menu</a>
+    <a class="navbar-brand" href="http://dbcatalogo3e2guilherme.42web.io/index.php?c=home">Menu</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,14 +10,14 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <?php foreach ($categorias as $categoria) : ?>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?= base_url() . "?c=home&m=index&id=" . $categoria['idCategoria'] ?>"><?= $categoria['nome'] ?></a>
+            <a class="nav-link active" aria-current="page" href="<?= "http://dbcatalogo3e2guilherme.42web.io/index.php?c=home&m=index&id=" . $categoria['idCategoria'] ?>"><?= $categoria['nome'] ?></a>
           </li>
         <?php endforeach; ?>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="<?= base_url() . "?c=restrito&m=login" ?>">Acesso Restrito</a>
+        <li class=" nav-item">
+          <a class="nav-link" aria-current="page" href="http://dbcatalogo3e2guilherme.42web.io/index.php?c=restrito&m=login">Acesso Restrito</a>
         </li>
       </ul>
-      <form class="d-flex" method="POST" action="<?= base_url() . "?c=home&m=search" ?>">
+      <form class="d-flex" method="POST" action="http://dbcatalogo3e2guilherme.42web.io/index.php?c=home&m=search">
         <input class="form-control me-2" type="search" placeholder="Perquisar" aria-label="Search" name="search">
         <button class="btn btn-outline-success" type="submit">Buscar</button>
       </form>
